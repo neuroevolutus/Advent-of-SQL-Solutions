@@ -38,7 +38,7 @@ all_food_ids AS (
     FROM
         menu_three_food_ids
 ),
-food_id_counts AS (
+food_id_with_highest_count AS (
     SELECT
         food_ids,
         count(*) food_id_count
@@ -46,12 +46,12 @@ food_id_counts AS (
         all_food_ids
     GROUP BY
         food_ids
+    ORDER BY
+        food_id_count DESC
+    LIMIT 1
 )
 SELECT
     food_ids
 FROM
-    food_id_counts
-ORDER BY
-    food_id_count DESC
-LIMIT 1;
+    food_id_with_highest_count;
 
