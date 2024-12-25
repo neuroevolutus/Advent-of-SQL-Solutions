@@ -1,0 +1,3 @@
+* Advent of SQL Solutions
+
+This repository contains my solutions for the wonderful SQL challenges found in [[https://adventofsql.com/][Advent of SQL]]. It currently contains my PostgreSQL solutions, but I may go back and add solutions for other query languages in the future. Please go and try out the challenges for yourself if you haven't already!
